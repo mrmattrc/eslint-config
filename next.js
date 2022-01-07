@@ -4,7 +4,8 @@ module.exports = {
         {
             files: ['pages/**'],
             rules: {
-                'import/no-default-export': 'off',
+				'import/no-default-export': 'off',
+				'jsx-a11y/anchor-is-valid': 'off',
                 'max-lines-per-function': 'off',
             },
         },

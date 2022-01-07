@@ -23,6 +23,10 @@ module.exports = {
         },
     },
     rules: {
+		'import/no-default-export': 'off',
+        'jsx-a11y/label-has-for': 'off',
+		'max-lines-per-function': 'off',
+		'no-inline-comments': 'off',
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
         'react/react-in-jsx-scope': 'off',
@@ -56,7 +60,6 @@ module.exports = {
         'react/jsx-no-target-blank': 'error',
         'react/jsx-no-useless-fragment': 'error',
         'react/jsx-pascal-case': 'error',
-        'jsx-a11y/label-has-for': 'off',
     },
     overrides: [
         {
