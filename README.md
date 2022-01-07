@@ -7,14 +7,14 @@ A highly opinionated ESLint config.
 Install from NPM, including peer dependencies, with `--save-dev`
 
 ```bash
-npm i @nick-mazuk/eslint-config eslint --save-dev
+npm i @mattcampbell/eslint-config eslint --save-dev
 ```
 
 Then, create a `.eslintrc` file in the root of your project with
 
 ```json
 {
-    "extends": ["@nick-mazuk/eslint-config"]
+    "extends": ["@mattcampbell/eslint-config"]
 }
 ```
 
@@ -40,16 +40,16 @@ npm run lint
 
 This package has configs for different scenarios (more coming).
 
-- **React**: use `@nick-mazuk/eslint-config/react`
-- **NextJS**: use `@nick-mazuk/eslint-config/next`
-- **Cypress**: use `@nick-mazuk/eslint-config/cypress`
-- **Firebase functions**: use `@nick-mazuk/eslint-config/firebase-functions`
+- **React**: use `@mattcampbell/eslint-config/react`
+- **NextJS**: use `@mattcampbell/eslint-config/next`
+- **Cypress**: use `@mattcampbell/eslint-config/cypress`
+- **Firebase functions**: use `@mattcampbell/eslint-config/firebase-functions`
 
 When using a more specific config, the base config is not needed. For instance, with NextJS, this is all that's required:
 
 ```json
 {
-    "extends": ["@nick-mazuk/eslint-config/next"]
+    "extends": ["@mattcampbell/eslint-config/next"]
 }
 ```
 
