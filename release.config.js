@@ -1,3 +1,3 @@
 module.exports = {
-    extends: ['@nick-mazuk/semantic-release-config'],
+	extends: ['@nick-mazuk/semantic-release-config'],
 }

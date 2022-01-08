@@ -1,15 +1,15 @@
 {
-    "extends": ["config:base", ":preserveSemverRanges"],
-    "automerge": true,
-    "automergeType": "branch",
-    "lockFileMaintenance": {
-        "enabled": true
-    },
-    "packageRules": [
-        {
-            "matchPackagePatterns": ["^@nick-mazuk"],
-            "prPriority": 5
-        }
-    ],
-    "commitMessageAction": "bump: bump"
+	"extends": ["config:base", ":preserveSemverRanges"],
+	"automerge": true,
+	"automergeType": "branch",
+	"lockFileMaintenance": {
+		"enabled": true
+	},
+	"packageRules": [
+		{
+			"matchPackagePatterns": ["^@nick-mazuk"],
+			"prPriority": 5
+		}
+	],
+	"commitMessageAction": "bump: bump"
 }

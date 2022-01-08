@@ -14,7 +14,7 @@ Then, create a `.eslintrc` file in the root of your project with
 
 ```json
 {
-    "extends": ["@mattcampbell/eslint-config"]
+	"extends": ["@mattcampbell/eslint-config"]
 }
 ```
 
@@ -40,16 +40,16 @@ npm run lint
 
 This package has configs for different scenarios (more coming).
 
-- **React**: use `@mattcampbell/eslint-config/react`
-- **NextJS**: use `@mattcampbell/eslint-config/next`
-- **Cypress**: use `@mattcampbell/eslint-config/cypress`
-- **Firebase functions**: use `@mattcampbell/eslint-config/firebase-functions`
+-   **React**: use `@mattcampbell/eslint-config/react`
+-   **NextJS**: use `@mattcampbell/eslint-config/next`
+-   **Cypress**: use `@mattcampbell/eslint-config/cypress`
+-   **Firebase functions**: use `@mattcampbell/eslint-config/firebase-functions`
 
 When using a more specific config, the base config is not needed. For instance, with NextJS, this is all that's required:
 
 ```json
 {
-    "extends": ["@mattcampbell/eslint-config/next"]
+	"extends": ["@mattcampbell/eslint-config/next"]
 }
 ```
 
@@ -62,10 +62,10 @@ This is the easiest way to ensure ESLint is run every time you save a file, and 
 
 ```json
 {
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "eslint.run": "onType"
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"eslint.run": "onType"
 }
 ```
 
