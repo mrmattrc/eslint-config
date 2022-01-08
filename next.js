@@ -2,7 +2,7 @@ module.exports = {
 	extends: [require.resolve('./react')],
 	overrides: [
 		{
-			files: ['pages/**'],
+			files: ['pages/**', 'components/**'],
 			rules: {
 				'import/no-default-export': 'off',
 				'jsx-a11y/anchor-is-valid': 'off',
