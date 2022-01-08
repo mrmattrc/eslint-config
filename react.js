@@ -4,13 +4,12 @@ module.exports = {
 		commonjs: true,
 		es2020: true,
 	},
-	plugins: ['react', 'react-hooks', 'testing-library', 'jsx-a11y'],
+	plugins: ['@typescript-eslint', 'jsx-a11y', 'react', 'react-hooks', 'testing-library'],
 	extends: [
 		require.resolve('./lib/base'),
 		'plugin:react/recommended',
-		'plugin:testing-library/recommended',
+		'plugin:jsx-a11y/recommended',
 		'plugin:testing-library/react',
-		'plugin:jsx-a11y/strict',
 	],
 	parserOptions: {
 		ecmaFeatures: {
