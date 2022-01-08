@@ -22,6 +22,7 @@ module.exports = {
 		},
 	},
 	rules: {
+		'class-methods-use-this': 'off',
 		'import/no-default-export': 'off',
 		'jsx-a11y/label-has-for': 'off',
 		'max-lines-per-function': 'off',
