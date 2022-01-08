@@ -1,3 +1,14 @@
 node_modules
 .gitignore
 .gitattributes
+.eslintrc
+lib/base.js
++cypress.js
+cli.js
+firebase-functions.js
+index.js
+jest.js
+next.js
+react.js
+release.config.js
+svelte.js
