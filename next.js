@@ -1,5 +1,5 @@
 module.exports = {
-	extends: [require.resolve('./react'), 'next/core-web-vitals'],
+	extends: [require.resolve('./react'), 'plugin:@next/next/recommended', 'next/core-web-vitals'],
 	overrides: [
 		{
 			files: ['pages/**', 'components/**', 'lib/**'],
