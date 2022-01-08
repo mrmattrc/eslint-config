@@ -4,7 +4,7 @@
 	"embeddedLanguageFormatting": "auto",
 	"endOfLine": "lf",
 	"htmlWhitespaceSensitivity": "css",
-	"jsxBracketSameLine": false,
+	"bracketSameLine": false,
 	"jsxSingleQuote": true,
 	"printWidth": 100,
 	"proseWrap": "never",
