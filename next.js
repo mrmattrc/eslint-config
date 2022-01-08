@@ -1,8 +1,8 @@
 module.exports = {
-	extends: [require.resolve('./react')],
+	extends: [require.resolve('./react'), 'next/core-web-vitals'],
 	overrides: [
 		{
-			files: ['pages/**', 'components/**'],
+			files: ['pages/**', 'components/**', 'lib/**'],
 			rules: {
 				'import/no-default-export': 'off',
 				'jsx-a11y/anchor-is-valid': 'off',
