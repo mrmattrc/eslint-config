@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/@mattcampbell/eslint-config.svg)](//npmjs.com/package/@mattcampbell/eslint-config)
+
 # eslint-config
 
 A highly opinionated ESLint config.
