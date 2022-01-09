@@ -2,14 +2,14 @@
 
 # eslint-config
 
-A highly opinionated ESLint config.
+A highly opinionated ESLint config. This config is designed to provide consistent behavior, enforce best practices, and minimize potential issues and errors. Because it is so opinionated, there will likely be a lot of errors when adding to an existing project. I recommend running the lint script to see what issues it finds and trying to fix as many of the issues as possible. However, there will definitely be cases where it is not worth the time or effort to fix various issues. When that happens, you can override any rule by adding it to your `.eslintrc` config.
 
 ## Getting started
 
-Install from NPM, including peer dependencies, with `--save-dev`
+Install from NPM, including peer dependencies, with `-D` or `--save-dev`.
 
 ```bash
-npm i @mattcampbell/eslint-config eslint --save-dev
+npm i -D @mattcampbell/eslint-config eslint
 ```
 
 Then, create a `.eslintrc` file in the root of your project with
@@ -26,28 +26,26 @@ Add this to your `package.json` file:
 
 ```json
 "scripts": {
-    "eslint": "eslint '**/*.{js,ts,tsx}' --quiet --fix",
-    "check-types": "tsc --noemit",
-    "lint": "npm run eslint && npm run check-types"
+	"check-types": "tsc --noEmit --pretty",
+	"prettier": "prettier --write .",
+	"lint": "eslint '**/*.{js,jsx,ts,tsx}' --quiet",
+	"lint:fix": "npm run lint --fix && npm run check-types && npm run prettier"
 },
 ```
 
-Then run
-
-```bash
-npm run lint
-```
+Then run `npm run lint` or run `npm run lint:fix` to fix all fixable issues.
 
 ### Versions
 
-This package has configs for different scenarios (more coming).
-
--   **React**: use `@mattcampbell/eslint-config/react`
--   **NextJS**: use `@mattcampbell/eslint-config/next`
+-   **CLI**: use `@mattcampbell/eslint-config/cli`
 -   **Cypress**: use `@mattcampbell/eslint-config/cypress`
--   **Firebase functions**: use `@mattcampbell/eslint-config/firebase-functions`
+-   **Firebase Functions**: use `@mattcampbell/eslint-config/firebase-functions`
+-   **Jest**: use `@mattcampbell/eslint-config/jest`
+-   **Next**: use `@mattcampbell/eslint-config/next`
+-   **React**: use `@mattcampbell/eslint-config/react`
+-   **Svelte**: use `@mattcampbell/eslint-config/svelte`
 
-When using a more specific config, the base config is not needed. For instance, with NextJS, this is all that's required:
+When using a more specific config, the base config is not needed. For instance, with Next.js, this is all that's required:
 
 ```json
 {
@@ -83,7 +81,7 @@ This config has Prettier built-in. If you use Prettier with your code editor or 
 
 ## Use without TypeScript
 
-Currently, all the configs require TypeScript. Perhaps in the future I'll create a TypeScript addon, but since TypeScript is just better than vanilla JS, vanilla JS is currently not supported.
+Currently, all the configs require TypeScript. Vanilla JS is currently not supported.
 
 ## What rules are enabled?
 
@@ -91,4 +89,4 @@ In short, this config runs 500+ rules (and counting). Luckily, the source code i
 
 ## I found a bug, what do I do?
 
-If you found a bug or rule conflicts, [submit an issue on GitHub](https://github.com/Nick-Mazuk/eslint-config/issues).
+If you found a bug or rule conflicts, [submit an issue on GitHub](https://github.com/mrmattrc/eslint-config/issues).

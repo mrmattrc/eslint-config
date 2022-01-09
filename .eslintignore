@@ -3,7 +3,7 @@ node_modules
 .gitattributes
 .eslintrc
 lib/base.js
-+cypress.js
+cypress.js
 cli.js
 firebase-functions.js
 index.js
