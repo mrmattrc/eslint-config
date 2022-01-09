@@ -25,6 +25,7 @@ module.exports = {
 		'class-methods-use-this': 'off',
 		'import/no-default-export': 'off',
 		'jsx-a11y/label-has-for': 'off',
+		'jsx-a11y/no-redundant-roles': 'warn',
 		'max-lines-per-function': 'off',
 		'no-inline-comments': 'off',
 		'react-hooks/rules-of-hooks': 'error',
