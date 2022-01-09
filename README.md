@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/@mattcampbell/eslint-config.svg)](//npmjs.com/package/@mattcampbell/eslint-config)
+[![npm version](https://badge.fury.io/js/@mattcampbell%2Feslint-config.svg)](https://badge.fury.io/js/@mattcampbell%2Feslint-config)
 
 # eslint-config
 
