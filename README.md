@@ -34,14 +34,15 @@ You will need to specify the tsconfig.json in the `.eslintrc` file.
 
 ### Running the linter
 
-Add this to your `package.json` file:
+Add these scripts to your `package.json` file:
 
 ```json
 "scripts": {
-    "check-types": "tsc --noEmit --pretty",
-    "prettier": "prettier --write .",
-    "lint": "eslint '**/*.{js,jsx,ts,tsx}' --quiet",
-    "lint:fix": "npm run lint --fix && npm run check-types && npm run prettier"
+    "check-types": "tsc --noemit --pretty",
+    "eslint": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet",
+    "lint": "npm run eslint && npm run check-types",
+    "lint:fix": "npm run eslint --fix && npm run check-types && npm run prettier",
+    "prettier": "prettier --write ."
 },
 ```
 
