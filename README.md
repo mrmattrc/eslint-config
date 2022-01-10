@@ -38,7 +38,7 @@ Add these scripts to your `package.json` file:
 
 ```json
 "scripts": {
-    "check-types": "tsc --noemit --pretty",
+    "check-types": "tsc --noEmit --pretty",
     "eslint": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet",
     "lint": "npm run eslint && npm run check-types",
     "lint:fix": "npm run eslint --fix && npm run check-types && npm run prettier",
