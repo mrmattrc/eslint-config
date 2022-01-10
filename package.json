@@ -17,7 +17,7 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --quiet",
+		"eslint": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet",
 		"check-types": "tsc --noemit",
 		"prettier": "prettier --write .",
 		"lint": "npm run eslint && npm run check-types",
