@@ -40,8 +40,8 @@ Add these scripts to your `package.json` file:
 "scripts": {
     "check-types": "tsc --noEmit --pretty",
     "eslint": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet",
-    "lint": "npm run eslint && npm run check-types",
-    "lint:fix": "npm run eslint --fix && npm run check-types && npm run prettier",
+    "lint": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet && npm run check-types",
+    "lint:fix": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet --fix && npm run check-types && npm run prettier",
     "prettier": "prettier --write ."
 },
 ```

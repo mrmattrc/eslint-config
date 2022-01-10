@@ -1,6 +1,6 @@
 {
 	"name": "@mattcampbell/eslint-config",
-	"version": "0.8.49",
+	"version": "0.8.50",
 	"description": "A very opinionated ESLint and Prettier config.",
 	"author": "Matt Campbell <mrmattrc@gmail.com>",
 	"homepage": "https://github.com/mrmattrc/eslint-config#readme",
@@ -17,11 +17,10 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"eslint": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet",
 		"check-types": "tsc --noEmit --pretty",
 		"prettier": "prettier --write .",
-		"lint": "npm run eslint && npm run check-types",
-		"lint:fix": "npm run eslint --fix && npm run check-types && npm run prettier"
+		"lint": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet && npm run check-types",
+		"lint:fix": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet --fix && npm run check-types && npm run prettier"
 	},
 	"license": "MIT",
 	"dependencies": {
