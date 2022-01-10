@@ -1,6 +1,6 @@
 {
 	"name": "@mattcampbell/eslint-config",
-	"version": "0.8.46",
+	"version": "0.8.47",
 	"description": "A very opinionated ESLint and Prettier config.",
 	"author": "Matt Campbell <mrmattrc@gmail.com>",
 	"homepage": "https://github.com/mrmattrc/eslint-config#readme",
