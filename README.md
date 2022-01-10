@@ -6,17 +6,29 @@ A highly opinionated ESLint config. This config is designed to provide consisten
 
 ## Getting started
 
-Install from NPM, including peer dependencies, with `-D` or `--save-dev`.
+Install `eslint @mattcampbell/eslint-config` (and `eslint-config-next` if using Next.js).
 
 ```bash
-npm i -D @mattcampbell/eslint-config eslint
+npm i -D eslint eslint-config-next @mattcampbell/eslint-config
 ```
 
-Then, create a `.eslintrc` file in the root of your project with
+Then create a `.eslintrc` file in the root of your project with
 
 ```json
 {
-	"extends": ["@mattcampbell/eslint-config"]
+    "extends": ["@mattcampbell/eslint-config/next"],
+}
+```
+If you receive this error:
+> "`Parsing error: Cannot read file '/users/mattcampbell/sites/skills-genome-project/tsconfig.json'.`"
+
+You will need to specify the tsconfig.json in the `.eslintrc` file.
+
+```json
+{
+    "parserOptions": {
+      "project": ["./tsconfig.json"]
+    }
 }
 ```
 
@@ -26,10 +38,10 @@ Add this to your `package.json` file:
 
 ```json
 "scripts": {
-	"check-types": "tsc --noEmit --pretty",
-	"prettier": "prettier --write .",
-	"lint": "eslint '**/*.{js,jsx,ts,tsx}' --quiet",
-	"lint:fix": "npm run lint --fix && npm run check-types && npm run prettier"
+    "check-types": "tsc --noEmit --pretty",
+    "prettier": "prettier --write .",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}' --quiet",
+    "lint:fix": "npm run lint --fix && npm run check-types && npm run prettier"
 },
 ```
 
@@ -49,7 +61,7 @@ When using a more specific config, the base config is not needed. For instance, 
 
 ```json
 {
-	"extends": ["@mattcampbell/eslint-config/next"]
+    "extends": ["@mattcampbell/eslint-config/next"]
 }
 ```
 
@@ -62,10 +74,10 @@ This is the easiest way to ensure ESLint is run every time you save a file, and 
 
 ```json
 {
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
-	},
-	"eslint.run": "onType"
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.run": "onType"
 }
 ```
 
