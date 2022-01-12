@@ -15,10 +15,13 @@
 	"directories": {
 		"lib": "lib"
 	},
+	"engines": {
+		"node": ">=16.0.0"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"check-types": "tsc --noEmit --pretty",
-		"prettier": "prettier --write .",
+		"prettier": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
 		"lint": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet && npm run check-types",
 		"lint:fix": "TIMING=1 eslint \"**/*.{js,jsx,ts,tsx}\" --quiet --fix && npm run check-types && npm run prettier"
 	},
