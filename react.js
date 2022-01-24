@@ -10,6 +10,7 @@ module.exports = {
 		'plugin:react/recommended',
 		'plugin:jsx-a11y/recommended',
 		'plugin:testing-library/react',
+		'plugin:prettier/recommended',
 	],
 	parserOptions: {
 		ecmaFeatures: {
